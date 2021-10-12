@@ -1,0 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg7_thread;
+
+/**
+ *
+ * @author Pamungkas
+ */
+public class ThreadClass extends Thread {
+    
+    @Override
+    public void run() {
+        Generator generator = new Generator(10,100);
+        generator.generateRandomNumber(getName());
+    }
+    
+}
